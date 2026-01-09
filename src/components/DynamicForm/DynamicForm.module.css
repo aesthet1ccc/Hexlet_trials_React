@@ -1,9 +1,9 @@
-.root {
+.Dynamic_Form {
   max-width: 1500px;
   margin: 0 auto;
 }
 
-input {
+.input_field {
   width: 300px;
   height: 50px;
   border-radius: 10px;
@@ -12,7 +12,7 @@ input {
   background-color: white;
 }
 
-h2 {
+.h2_user_list {
   font-size: 25px;
 }
 .user_index {
@@ -26,7 +26,7 @@ h2 {
   align-items: flex-start;
 }
 
-label {
+.label_title {
   display: block;
   margin: 40px 0 40px;
   font-size: 25px;
@@ -87,7 +87,7 @@ label {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-li {
+.list_users {
   list-style: none;
   font-size: 18px;
 }
