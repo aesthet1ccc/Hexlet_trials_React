@@ -1,4 +1,4 @@
-.Dynamic_Form {
+.dynamic_Form {
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -12,7 +12,7 @@
   background-color: white;
 }
 
-.h2_user_list {
+.user_list_title {
   font-size: 25px;
 }
 .user_index {
@@ -87,7 +87,7 @@
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.list_users {
+.list_item {
   list-style: none;
   font-size: 18px;
 }

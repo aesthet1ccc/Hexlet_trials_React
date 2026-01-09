@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import styles from '../DynamicForm/DynamicForm.module.css';
-import { fieldState } from './DynamicForm';
+import { FieldState } from './DynamicForm';
 
 type DynamicFormFieldProps = {
-  field: fieldState;
+  field: FieldState;
   handleFieldChange: (event: React.ChangeEvent<HTMLInputElement>, id: number) => void;
   RemoveFieldAdd: (id: number) => void;
 };
@@ -20,8 +20,7 @@ const DynamicFormField: FC<DynamicFormFieldProps> = ({
         <div className={styles.first_input_block}>
           <input
             className={styles.input_field}
-            name="text"
-            id={String(field.id)}
+            name={`Field ${field.id}`}
             type="text"
             required
             value={field.text}
