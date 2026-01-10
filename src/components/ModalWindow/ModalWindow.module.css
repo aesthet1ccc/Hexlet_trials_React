@@ -1,0 +1,24 @@
+.modal_window_main {
+  margin: 0 0 0 50px;
+}
+
+.modal_window_title {
+  margin-bottom: 30px;
+}
+.input_value {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.value_list {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.list_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
