@@ -1,0 +1,26 @@
+.counter_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.button_switch_loc {
+  width: 120px;
+  height: 45px;
+}
+
+.button_counter_clicks {
+  width: 100px;
+  height: 50px;
+  margin-top: 15px;
+
+  font-size: 20px;
+}
+
+.button_reset {
+  width: 250px;
+  height: 40px;
+  margin-top: 15px;
+}
