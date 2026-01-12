@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './Counter.module.css';
 import Button from 'react-bootstrap/Button';
 import { useState, FC } from 'react';
@@ -12,7 +10,6 @@ const Counter: FC = () => {
   const { i18n, t } = useTranslation();
 
   const ChangeLocalization = (lang: languages) => {
-    console.log(lang);
     i18n.changeLanguage(lang);
   };
 
