@@ -5,16 +5,15 @@ import Button from 'react-bootstrap/Button';
 import { useState, FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Counter: FC = () => {
-  const [count, setCount] = useState<number>(0);
-  const [isSelected, setIsSelected] = useState<boolean>(false);
+type languages = 'ru' | 'en';
 
+const Counter: FC = () => {
+  const [count, setCount] = useState(0);
   const { i18n, t } = useTranslation();
 
-  const ChangeLocalization = () => {
-    const switchLang = i18n.language === 'ru' ? 'eng' : 'ru';
-    setIsSelected(!isSelected);
-    i18n.changeLanguage(switchLang);
+  const ChangeLocalization = (lang: languages) => {
+    console.log(lang);
+    i18n.changeLanguage(lang);
   };
 
   const AddCountClicks = () => {
@@ -30,15 +29,15 @@ const Counter: FC = () => {
         <div className={styles.local_block}>
           <Button
             className={styles.button_switch_loc}
-            onClick={ChangeLocalization}
-            variant={isSelected ? 'primary' : 'outline-info'}
+            onClick={() => ChangeLocalization('en')}
+            variant={i18n.language === 'en' ? 'primary' : 'outline-info'}
           >
             English
           </Button>
           <Button
-            variant={!isSelected ? 'primary' : 'outline-info'}
+            variant={i18n.language === 'ru' ? 'primary' : 'outline-info'}
             className={styles.button_switch_loc}
-            onClick={ChangeLocalization}
+            onClick={() => ChangeLocalization('ru')}
           >
             Русский
           </Button>
